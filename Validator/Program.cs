@@ -21,7 +21,6 @@ namespace Validator
           validPinCheck = int.TryParse(pinEntry, out int resultCheck2);
         }
       }
-      Console.WriteLine(pinEntry.Length);
       var validPin = int.TryParse(pinEntry, out int result);
       while (validPin == false)
       {
@@ -35,7 +34,7 @@ namespace Validator
           validPin = int.TryParse(pinEntry, out int result3);
         }
       }
-      Console.WriteLine(pinEntry);
+      Console.WriteLine($"Pin entry is valid, your pin is {pinEntry}");
     }
   }
 }
